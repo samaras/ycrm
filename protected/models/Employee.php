@@ -55,7 +55,7 @@ class Employee extends CActiveRecord
 			array('active, leavedate', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, departmentid, firstname, lastname, email, ext, active, title, job_title, address1, address2, city, state_province, country, mobile, gender, bank_name, bank_account_number, hiredate, leavedate', 'safe', 'on'=>'search'),
+			array('id, departmentid, firstname, lastname, email, ext, active, title, job_title, city, state_province, country, gender, hiredate, leavedate', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -77,9 +77,9 @@ class Employee extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'departmentid' => 'Departmentid',
-			'firstname' => 'Firstname',
-			'lastname' => 'Lastname',
+			'departmentid' => 'Department',
+			'firstname' => 'First Name',
+			'lastname' => 'Last Name',
 			'email' => 'Email',
 			'ext' => 'Ext',
 			'active' => 'Active',
@@ -94,8 +94,8 @@ class Employee extends CActiveRecord
 			'gender' => 'Gender',
 			'bank_name' => 'Bank Name',
 			'bank_account_number' => 'Bank Account Number',
-			'hiredate' => 'Hiredate',
-			'leavedate' => 'Leavedate',
+			'hiredate' => 'Hired Date',
+			'leavedate' => 'Leave Date',
 		);
 	}
 

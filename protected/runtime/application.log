@@ -301,3 +301,12 @@ Stack trace:
 REQUEST_URI=/yii/ycrm/index.php/gii/model/index
 HTTP_REFERER=http://localhost:8081/yii/ycrm/index.php/gii/controller/index
 ---
+2014/10/28 00:12:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in /var/www/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/yii/ycrm/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/ycrm/
+HTTP_REFERER=http://localhost:8081/yii/
+---
