@@ -108,4 +108,16 @@ class User extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	/**
+	 * Returns a the two gender options in an array format
+	 * @return Array gender options
+	*/
+	public function getGenderOptons()
+	{
+		return array(
+			0 => 'Male',
+			1 => 'Female',
+		);
+	}
 }
